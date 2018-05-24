@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Discounter App</string>
+    <string name="cost_price">Cost Price</string>
+    <string name="discount_pct">Discount %</string>
+    <string name="cost_price_prompt">Enter a cost price and discount percentage.</string>
+    <string name="discount_result">The discounted price is:</string>
+    <string name="calculate">Calculate</string>
+    <string name="hyphen">-</string>
+    <string name="invalid_entry">Invalid data entry.</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/costPricePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cost_price_prompt"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/costPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/cost_price"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/costPricePrompt"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/discount_pct"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/costPrice"
+        android:layout_alignLeft="@id/costPrice"
+        android:layout_alignStart="@id/costPrice"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/calcDiscButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/discountedMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discount_result"
+        android:textSize="18sp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/discount"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/finalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hyphen"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/discountedMessage"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
